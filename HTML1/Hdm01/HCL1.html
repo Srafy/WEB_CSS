@@ -45,38 +45,102 @@
 <a href="Exercise2.html" target="_blank" title="练习二">Exercise2.html</a>
 <br>
 <style>
-    td{background-color:burlywood;}
-    p{color: red}
-    #p1{color: antiquewhite}
-    .pre{color: yellow}
-    .after{color: cadetblue}
-    p.pre{color: aqua}
-    p#p1{
-        width: 50%;
-        height: 50%;
-        background-color: pink;
+    /*按照标签名*/
+    td {
+        background-color: burlywood;
     }
-    p#p2{
-        width: 180px;
-        height: 50px;
-        background-color: green;
+
+    p {
+        color: red
+    }
+
+    /*按 id*/
+    #p1 {
+        color: antiquewhite
+    }
+
+    /*按 class*/
+    .pre {
+        color: yellow
+    }
+
+    .after {
+        color: cadetblue
+    }
+
+    /*按 标签和class*/
+    p.pre {
+        color: aqua
+    }
+
+    /*按 标签和id*/
+    p#p1 {
+        width: 50%; /*宽度*/
+        height: 50%; /*高度*/
+        background-color: pink; /*背景颜色*/
+    }
+
+    p#p2 {
+        width: 180px; /*宽度*/
+        height: 50px; /*高度*/
+        background-color: green; /*背景颜色*/
+        text-align: center; /*对齐 left center right*/
+        border: 3px pink solid; /*边框*/
+        margin: 10px; /*外边距*/
+    }
+
+    .a {
+        text-decoration: none; /*去掉下划线的超链*/
+    }
+
+    h1 {
+        /*text-decoration: overline;!*上划线*!*/
+        /*text-decoration: line-through;!*删除效果*!*/
+        /*text-decoration: underline;!*下划线*!*/
+        /*text-decoration:blink;!*闪烁效果*!*/
+    }
+
+    p {
+        width: 100px; /*宽度*/
+        line-height: 200%;  /*行间距*/
+        letter-spacing: 2px;/*字符间距*/
+        word-spacing:10px;/*单词间距*/
+        text-indent:50px;/*首行缩进*/
+    }
+    div#colorful {
+        color: pink; /*文字颜色*/
     }
 </style>
 <table border="1" width="100px">
-    <tr><td align="left">1</td><td  valign="top">a</td></tr>
-    <tr><td align="center">2</td><td  valign="middle">b</td></tr>
-    <tr><td align="right">3</td><td  valign="bottom">c</td></tr>
+    <tr>
+        <td align="left">1</td>
+        <td valign="top">a</td>
+    </tr>
+    <tr>
+        <td align="center">2</td>
+        <td valign="middle">b</td>
+    </tr>
+    <tr>
+        <td align="right">3</td>
+        <td valign="bottom">c</td>
+    </tr>
 </table>
 <p style="color: blueviolet">niHao</p>
-<p id="p1" >HelloP1</p>
-<p id="p2" >HelloP2</p>
-<p class="pre" >Hello</p>
-<p class="pre" >Hello</p>
-<p class="pre" >Hello</p>
+<p id="p1">HelloP1</p>
+<p id="p2">HelloP2</p>
+<p class="pre">Hello</p>
+<p class="pre">Hello</p>
+<p class="pre">Hello</p>
 <span class="pre">class=pre的span</span>
-<p class="after" >Hello</p>
-<p class="after" >Hello</p>
-<p class="after" >Hello</p>
-
+<p class="after">Hello</p>
+<p class="after">Hello</p>
+<p class="after">Hello</p>
+<div id="colorful">pink</div>
+<a class="a" href="Exercise2.html">去掉下划线的超链</a>
+<h1>123123</h1>
+<p>112a world
+    212a
+    312a
+</p>
 </body>
 </html>
